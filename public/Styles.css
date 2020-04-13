@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    font-family:verdana,sans-serif
+}
+.clearfix:after,.clearfix:before{
+    content:"";
+    display:table;
+    clear:both
+}
+.app-wrapper{
+    margin:0 auto;
+    display:flex;
+    padding:20px 0
+}
+.content, .allNews {
+    width: 100%;
+}
+.news {
+    background-color: #d3d3d3;
+    border-bottom: 1px solid #000;
+}
+.numComments, .points, .storyTitle {
+    display: inline-flex;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+.contentDetails {
+    display: inline-block;
+    padding: 5px;
+}
+.contentDetails.createdDate{
+    color: #666;
+}
+.contentDetails.hide {
+    font-weight: bold;
+}
+.moreContent {
+    cursor: pointer;
+    padding: 10px 25px;
+}
+@media screen and (min-width:1200px){
+    .app-wrapper{
+        width:1200px
+    }
+}
+@media screen and (max-width:767px){
+    .app-wrapper{
+        flex-direction:column;
+        padding:20px 10px
+    }    
+}
